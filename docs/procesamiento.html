@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 Procesamiento | Informe-descriptivo</title>
+  <meta name="description" content="5 Procesamiento | Informe-descriptivo" />
+  <meta name="generator" content="bookdown 0.42 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 Procesamiento | Informe-descriptivo" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 Procesamiento | Informe-descriptivo" />
+  
+  
+  
+
+<meta name="author" content="Centromagis" />
+
+
+<meta name="date" content="2025-05-07" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="datos.html"/>
+<link rel="next" href="resultados.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Índice</a></li>
+<li class="chapter" data-level="2" data-path="descripción.html"><a href="descripción.html"><i class="fa fa-check"></i><b>2</b> Descripción</a></li>
+<li class="chapter" data-level="3" data-path="objetivos.html"><a href="objetivos.html"><i class="fa fa-check"></i><b>3</b> Objetivos</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="objetivos.html"><a href="objetivos.html#objetivo-general"><i class="fa fa-check"></i><b>3.1</b> Objetivo general</a></li>
+<li class="chapter" data-level="3.2" data-path="objetivos.html"><a href="objetivos.html#objetivo-específicos"><i class="fa fa-check"></i><b>3.2</b> Objetivo específicos</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="datos.html"><a href="datos.html"><i class="fa fa-check"></i><b>4</b> Datos</a></li>
+<li class="chapter" data-level="5" data-path="procesamiento.html"><a href="procesamiento.html"><i class="fa fa-check"></i><b>5</b> Procesamiento</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="procesamiento.html"><a href="procesamiento.html#errores-e-inconsistencias"><i class="fa fa-check"></i><b>5.1</b> Errores e inconsistencias</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="procesamiento.html"><a href="procesamiento.html#errores-de-escritura"><i class="fa fa-check"></i><b>5.1.1</b> Errores de escritura</a></li>
+<li class="chapter" data-level="5.1.2" data-path="procesamiento.html"><a href="procesamiento.html#inconsistencias"><i class="fa fa-check"></i><b>5.1.2</b> Inconsistencias</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="procesamiento.html"><a href="procesamiento.html#análisis-de-datos-atípicos"><i class="fa fa-check"></i><b>5.2</b> Análisis de datos atípicos</a></li>
+<li class="chapter" data-level="5.3" data-path="procesamiento.html"><a href="procesamiento.html#identificación-de-datos-faltantes"><i class="fa fa-check"></i><b>5.3</b> Identificación de datos faltantes</a></li>
+<li class="chapter" data-level="5.4" data-path="procesamiento.html"><a href="procesamiento.html#imputación-de-datos-faltantes"><i class="fa fa-check"></i><b>5.4</b> Imputación de datos faltantes</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="procesamiento.html"><a href="procesamiento.html#imputación-del-precio-price"><i class="fa fa-check"></i><b>5.4.1</b> Imputación del Precio (price)</a></li>
+<li class="chapter" data-level="5.4.2" data-path="procesamiento.html"><a href="procesamiento.html#imputación-de-la-edad-age"><i class="fa fa-check"></i><b>5.4.2</b> Imputación de la Edad (age)</a></li>
+<li class="chapter" data-level="5.4.3" data-path="procesamiento.html"><a href="procesamiento.html#imputación-de-sexo-gender-centro-comercial-shopping_mall-y-método-de-pago-payment_method"><i class="fa fa-check"></i><b>5.4.3</b> Imputación de Sexo (gender), Centro Comercial (shopping_mall) y Método de pago (payment_method)</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="resultados.html"><a href="resultados.html"><i class="fa fa-check"></i><b>6</b> Resultados</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="resultados.html"><a href="resultados.html#características-demográficas-de-los-consumidores"><i class="fa fa-check"></i><b>6.1</b> Características demográficas de los consumidores</a></li>
+<li class="chapter" data-level="6.2" data-path="resultados.html"><a href="resultados.html#preferencia-de-productos-de-acuerdo-con-edad-y-sexo"><i class="fa fa-check"></i><b>6.2</b> Preferencia de productos de acuerdo con Edad y Sexo</a></li>
+<li class="chapter" data-level="6.3" data-path="resultados.html"><a href="resultados.html#métodos-de-pago-de-acuerdo-con-edad-sexo-y-tipo-de-producto"><i class="fa fa-check"></i><b>6.3</b> Métodos de pago de acuerdo con Edad, Sexo y tipo de producto</a></li>
+<li class="chapter" data-level="6.4" data-path="resultados.html"><a href="resultados.html#monto-total-de-transacción-de-acuerdo-con-edad-sexo-y-tipo-de-producto"><i class="fa fa-check"></i><b>6.4</b> Monto total de transacción de acuerdo con Edad, Sexo y Tipo de producto</a></li>
+<li class="chapter" data-level="6.5" data-path="resultados.html"><a href="resultados.html#distribución-del-consumo-en-centros-comerciales"><i class="fa fa-check"></i><b>6.5</b> Distribución del consumo en centros comerciales</a></li>
+<li class="chapter" data-level="6.6" data-path="resultados.html"><a href="resultados.html#tendencia-de-consumo-por-centro-comercial-en-el-periodo-muestreado"><i class="fa fa-check"></i><b>6.6</b> Tendencia de consumo por centro comercial en el periodo muestreado</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="conclusiones.html"><a href="conclusiones.html"><i class="fa fa-check"></i><b>7</b> Conclusiones</a></li>
+<li class="chapter" data-level="8" data-path="referencias.html"><a href="referencias.html"><i class="fa fa-check"></i><b>8</b> Referencias</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Informe-descriptivo</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="procesamiento" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">5</span> Procesamiento<a href="procesamiento.html#procesamiento" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="errores-e-inconsistencias" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> Errores e inconsistencias<a href="procesamiento.html#errores-e-inconsistencias" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="errores-de-escritura" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> Errores de escritura<a href="procesamiento.html#errores-de-escritura" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>En la primera etapa del preprocesamiento de los datos, se procedió a la estandarización de la notación utilizada en las categorías de las variables <em>Sexo</em>, <em>Categoría</em> y <em>Método de pago</em>. Estas variables presentaban inconsistencias tipográficas al representar una misma categoría. Por ejemplo, en la variable <em>Sexo</em> se encontraron notaciones como <code>"female"</code> y <code>"Female"</code>, así como <code>"male"</code> y <code>"Male"</code>, los cuales debían ser tratados como equivalentes. De manera similar, en la variable <em>Categoría</em> se identificaron registros como <code>"clothing"</code> y <code>"Clothing"</code>, <code>"cosmetics"</code> y <code>"Cosmetics"</code>, así como <code>"toys"</code>, <code>"Toys"</code> y <code>"ToyS"</code>, todos ellos correspondientes a una misma categoría conceptual. En el caso de la variable <em>Método de pago</em>, se observaron valores como <code>"cash"</code> y <code>"Cash"</code>, además de <code>"debit card"</code> y <code>"Debit card"</code>, que remiten a una misma modalidad de pago. Estas inconsistencias fueron corregidas mediante la transformación a notación estandarizada en minúsculas.</p>
+</div>
+<div id="inconsistencias" class="section level3 hasAnchor" number="5.1.2">
+<h3><span class="header-section-number">5.1.2</span> Inconsistencias<a href="procesamiento.html#inconsistencias" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>En una segunda etapa, se verificó la unicidad de los identificadores de facturas, considerando que, en términos generales, un número de factura no debería repetirse dentro de un mismo sistema de facturación, dado que su función principal es permitir la identificación única de cada transacción registrada, tanto para fines internos como fiscales. No obstante, es posible que un mismo identificador aparezca en múltiples filas cuando cada una representa un producto distinto incluido en la misma factura. Sin embargo, este no fue el caso en el presente conjunto de datos.</p>
+<p>Durante la revisión de los identificadores de factura, se detectaron nueve registros duplicados, en los cuales el mismo número de factura estaba asociado a diferentes fechas y clientes. De estos duplicados, siete coincidían completamente en la información relacionada con el cliente y la transacción realizada, lo que indicó la presencia de duplicados exactos. Como resultado, se eliminaron siete de estos registros, dejando solo uno por factura. Además, se identificaron dos facturas duplicadas debido a errores en la asignación de identificadores, lo que afectó a cuatro registros. A estos registros se les asignaron nuevos identificadores únicos: <code>"i000000"</code>, <code>"i111111"</code>, <code>"i222222"</code> y <code>"i333333"</code>. Como consecuencia de este proceso, se eliminaron 7 registros, quedando un total de 99,459 transacciones para continuar con el análisis.</p>
+<div class="figure"><span style="display:block;" id="fig:fig-edad"></span>
+<img src="Informe-descriptivo_files/figure-html/fig-edad-1.png" alt="Edad (años)." width="672" />
+<p class="caption">
+Figure 5.1: Edad (años).
+</p>
+</div>
+<table>
+<caption><span id="tab:tabla-edad">Table 5.1: </span>Estadísticas de Edad (años).</caption>
+<colgroup>
+<col width="11%" />
+<col width="8%" />
+<col width="11%" />
+<col width="9%" />
+<col width="11%" />
+<col width="8%" />
+<col width="19%" />
+<col width="19%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right">Registros</th>
+<th align="right">Mínimo</th>
+<th align="right">Cuartil 1</th>
+<th align="right">Mediana</th>
+<th align="right">Cuartil 3</th>
+<th align="right">Máximo</th>
+<th align="right">Atípicos menores</th>
+<th align="right">Atípicos mayores</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">99459</td>
+<td align="right">18</td>
+<td align="right">30</td>
+<td align="right">43</td>
+<td align="right">56</td>
+<td align="right">69</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<p>En una tercera etapa se analizaron posibles errores y valores atípicos en las variables cuantitativas.</p>
+<p>La Figura <a href="procesamiento.html#fig:fig-edad">5.1</a> evidencia que la variable <em>Edad</em> no presenta valores atípicos. Este hallazgo se corrobora con la Tabla <a href="procesamiento.html#tab:tabla-edad">5.1</a>, la cual muestra las estadísticas descriptivas de la variable Edad y revela que el rango de edades, de 18 a 69 años, es coherente y plausible para los identificadores de compra.</p>
+<div class="figure"><span style="display:block;" id="fig:fig-precio-categorias"></span>
+<img src="Informe-descriptivo_files/figure-html/fig-precio-categorias-1.png" alt="Precio (liras turcas) por Categoría del producto." width="672" />
+<p class="caption">
+Figure 5.2: Precio (liras turcas) por Categoría del producto.
+</p>
+</div>
+<table>
+<caption><span id="tab:tabla-precio-categoria">Table 5.2: </span>Estadísticas del Precio (liras turcas) por Categoría del producto.</caption>
+<colgroup>
+<col width="13%" />
+<col width="8%" />
+<col width="10%" />
+<col width="6%" />
+<col width="8%" />
+<col width="6%" />
+<col width="8%" />
+<col width="6%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">category</th>
+<th align="right">Registros</th>
+<th align="right">NA en price</th>
+<th align="right">Mínimo</th>
+<th align="right">Cuartil 1</th>
+<th align="right">Mediana</th>
+<th align="right">Cuartil 3</th>
+<th align="right">Máximo</th>
+<th align="right">Atípicos menores</th>
+<th align="right">Atípicos mayores</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">books</td>
+<td align="right">4980</td>
+<td align="right">1</td>
+<td align="right">303</td>
+<td align="right">606</td>
+<td align="right">1515</td>
+<td align="right">4545</td>
+<td align="right">7575000</td>
+<td align="right">0</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="left">clothing</td>
+<td align="right">34486</td>
+<td align="right">5</td>
+<td align="right">1</td>
+<td align="right">30008</td>
+<td align="right">60016</td>
+<td align="right">90024</td>
+<td align="right">120032</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">cosmetics</td>
+<td align="right">15096</td>
+<td align="right">6</td>
+<td align="right">2033</td>
+<td align="right">4066</td>
+<td align="right">8132</td>
+<td align="right">12198</td>
+<td align="right">16264</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">food &amp; beverage</td>
+<td align="right">14775</td>
+<td align="right">3</td>
+<td align="right">523</td>
+<td align="right">1046</td>
+<td align="right">1569</td>
+<td align="right">2092</td>
+<td align="right">523000</td>
+<td align="right">0</td>
+<td align="right">1</td>
+</tr>
+<tr class="odd">
+<td align="left">shoes</td>
+<td align="right">10032</td>
+<td align="right">2</td>
+<td align="right">60017</td>
+<td align="right">120034</td>
+<td align="right">180051</td>
+<td align="right">240068</td>
+<td align="right">300085</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">souvenir</td>
+<td align="right">4999</td>
+<td align="right">1</td>
+<td align="right">1173</td>
+<td align="right">2346</td>
+<td align="right">3519</td>
+<td align="right">4692</td>
+<td align="right">5865</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">technology</td>
+<td align="right">4995</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">2100</td>
+<td align="right">3150</td>
+<td align="right">4200</td>
+<td align="right">5250</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">toys</td>
+<td align="right">10087</td>
+<td align="right">2</td>
+<td align="right">1792</td>
+<td align="right">3584</td>
+<td align="right">7168</td>
+<td align="right">10752</td>
+<td align="right">14336</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<p>La Figura <a href="procesamiento.html#fig:fig-precio-categorias">5.2</a> indica que, en la variable <em>Precio</em>, se detectó al menos un valor atípico en la categoría <code>books, food and beverage</code>. La Tabla <a href="procesamiento.html#tab:tabla-precio-categoria">5.2</a> presenta las estadísticas de la variable <em>Precio</em> para cada categoría de productos. Se observa que en las categorías <code>books</code> y <code>food and beverage</code> el precio de un producto es significativamente superior al de los demás. Asimismo, se identificó un valor atípico entre los nueve datos faltantes (<code>NA</code>).</p>
+<p>Los valores atípicos de 7,575,000 y 523,000 liras turcas, correspondientes a las categorías <code>books</code> y <code>food and beverage</code>, representan precios unitarios muy altos para sus respectivas categorías. Por ello, se consideran valores inconsistentes. Estos tres datos atípicos serán tratados como datos faltantes (<code>NA</code>) en el resto del análisis. Posteriormente, se observa en la Figura <a href="procesamiento.html#fig:fig-precio-categoria-sin-atipicos">5.3</a> que la variable <em>Precio</em> ya no presenta estos valores inconsistentes.</p>
+<div class="figure"><span style="display:block;" id="fig:fig-precio-categoria-sin-atipicos"></span>
+<img src="Informe-descriptivo_files/figure-html/fig-precio-categoria-sin-atipicos-1.png" alt="Precio (liras turcas) por categoría del producto sin atípicos." width="672" />
+<p class="caption">
+Figure 5.3: Precio (liras turcas) por categoría del producto sin atípicos.
+</p>
+</div>
+<p>La Tabla <a href="procesamiento.html#tab:tabla-precio-categoria-sin-atipicos2">5.3</a> muestra las estadísticas de la variable <em>Precio</em> excluyendo las tres inconsistencias identificadas por valores atípicos. Se ha observado que, en las categorías <code>clothing</code> y <code>technology</code>, los valores de 1 y 3 liras turcas, respectivamente, no son plausibles en centros comerciales de ropa y tecnología nueva. Por ello, dichos valores han sido clasificados como inconsistentes y, en lo sucesivo, se tratarán como datos faltantes.</p>
+<p>Adicionalmente, se ha determinado que el valor de 7,575 liras turcas asignado a la categoría de <code>books</code> solo podría corresponder a ediciones de lujo, las cuales no están contempladas en los centros comerciales de la muestra. La Tabla <a href="procesamiento.html#tab:tabla-precio-categoria-sin-atipicos-sin-inconsistencias">5.4</a> presenta las estadísticas de la variable <em>Precio</em> luego de reemplazar estas inconsistencias por <code>NA</code>. Asimismo, se evidencia que el valor de 2 liras turcas para la categoría <code>clothing</code> debe ser considerado <code>NA</code>.</p>
+<p>La Tabla <a href="procesamiento.html#tab:tabla-precio-categoria-sin-atipicos-sin-inconsistencias2">5.5</a> expone las estadísticas del precio por categoría tras el tratamiento de las inconsistencias como datos faltantes. Se ha determinado que los siguientes rangos de precios en liras turcas son plausibles en los diez centros comerciales de la muestra:</p>
+<ul>
+<li><p><code>books</code>: entre 303 y 4,545</p></li>
+<li><p><code>clothing</code>: entre 15,004 y 120,032</p></li>
+<li><p><code>cosmetics</code>: entre 2033 y 16,264</p></li>
+<li><p><code>food and Beverage</code>: entre 523 y 2615</p></li>
+<li><p><code>shoes</code>: entre 60,017 y 300,085</p></li>
+<li><p><code>souvenir</code>: entre 1,173 y 5,865</p></li>
+<li><p><code>sechnology</code>: entre 1,050 y 5,250</p></li>
+<li><p><code>toys</code>: entre 1,792 y 14,336</p></li>
+</ul>
+<table>
+<caption><span id="tab:tabla-precio-categoria-sin-atipicos2">Table 5.3: </span>Estadísticas del Precio (liras turcas) sin 3 atípicos.</caption>
+<colgroup>
+<col width="14%" />
+<col width="8%" />
+<col width="10%" />
+<col width="6%" />
+<col width="8%" />
+<col width="7%" />
+<col width="8%" />
+<col width="6%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">category</th>
+<th align="right">Registros</th>
+<th align="right">NA en price</th>
+<th align="right">Mínimo</th>
+<th align="right">Cuartil 1</th>
+<th align="right">Mediana</th>
+<th align="right">Cuartil 3</th>
+<th align="right">Máximo</th>
+<th align="right">Atípicos menores</th>
+<th align="right">Atípicos mayores</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">books</td>
+<td align="right">4980</td>
+<td align="right">2</td>
+<td align="right">303</td>
+<td align="right">606</td>
+<td align="right">1515</td>
+<td align="right">4545</td>
+<td align="right">7575</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">clothing</td>
+<td align="right">34486</td>
+<td align="right">5</td>
+<td align="right">1</td>
+<td align="right">30008</td>
+<td align="right">60016</td>
+<td align="right">90024</td>
+<td align="right">120032</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">cosmetics</td>
+<td align="right">15096</td>
+<td align="right">6</td>
+<td align="right">2033</td>
+<td align="right">4066</td>
+<td align="right">8132</td>
+<td align="right">12198</td>
+<td align="right">16264</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">food &amp; beverage</td>
+<td align="right">14775</td>
+<td align="right">4</td>
+<td align="right">523</td>
+<td align="right">1046</td>
+<td align="right">1569</td>
+<td align="right">2092</td>
+<td align="right">2615</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">shoes</td>
+<td align="right">10032</td>
+<td align="right">2</td>
+<td align="right">60017</td>
+<td align="right">120034</td>
+<td align="right">180051</td>
+<td align="right">240068</td>
+<td align="right">300085</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">souvenir</td>
+<td align="right">4999</td>
+<td align="right">1</td>
+<td align="right">1173</td>
+<td align="right">2346</td>
+<td align="right">3519</td>
+<td align="right">4692</td>
+<td align="right">5865</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">technology</td>
+<td align="right">4995</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">2100</td>
+<td align="right">3150</td>
+<td align="right">4200</td>
+<td align="right">5250</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">toys</td>
+<td align="right">10087</td>
+<td align="right">2</td>
+<td align="right">1792</td>
+<td align="right">3584</td>
+<td align="right">7168</td>
+<td align="right">10752</td>
+<td align="right">14336</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption><span id="tab:tabla-precio-categoria-sin-atipicos-sin-inconsistencias">Table 5.4: </span>Estadísticas del Precio (liras turcas) sin inconsistencias de clothing y technology.</caption>
+<colgroup>
+<col width="14%" />
+<col width="8%" />
+<col width="10%" />
+<col width="6%" />
+<col width="8%" />
+<col width="7%" />
+<col width="8%" />
+<col width="6%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">category</th>
+<th align="right">Registros</th>
+<th align="right">NA en price</th>
+<th align="right">Mínimo</th>
+<th align="right">Cuartil 1</th>
+<th align="right">Mediana</th>
+<th align="right">Cuartil 3</th>
+<th align="right">Máximo</th>
+<th align="right">Atípicos menores</th>
+<th align="right">Atípicos mayores</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">books</td>
+<td align="right">4980</td>
+<td align="right">2</td>
+<td align="right">303</td>
+<td align="right">606</td>
+<td align="right">1515</td>
+<td align="right">4545</td>
+<td align="right">7575</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">clothing</td>
+<td align="right">34486</td>
+<td align="right">6</td>
+<td align="right">2</td>
+<td align="right">30008</td>
+<td align="right">60016</td>
+<td align="right">90024</td>
+<td align="right">120032</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">cosmetics</td>
+<td align="right">15096</td>
+<td align="right">6</td>
+<td align="right">2033</td>
+<td align="right">4066</td>
+<td align="right">8132</td>
+<td align="right">12198</td>
+<td align="right">16264</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">food &amp; beverage</td>
+<td align="right">14775</td>
+<td align="right">4</td>
+<td align="right">523</td>
+<td align="right">1046</td>
+<td align="right">1569</td>
+<td align="right">2092</td>
+<td align="right">2615</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">shoes</td>
+<td align="right">10032</td>
+<td align="right">2</td>
+<td align="right">60017</td>
+<td align="right">120034</td>
+<td align="right">180051</td>
+<td align="right">240068</td>
+<td align="right">300085</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">souvenir</td>
+<td align="right">4999</td>
+<td align="right">1</td>
+<td align="right">1173</td>
+<td align="right">2346</td>
+<td align="right">3519</td>
+<td align="right">4692</td>
+<td align="right">5865</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">technology</td>
+<td align="right">4995</td>
+<td align="right">3</td>
+<td align="right">1050</td>
+<td align="right">2100</td>
+<td align="right">3150</td>
+<td align="right">4200</td>
+<td align="right">5250</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">toys</td>
+<td align="right">10087</td>
+<td align="right">2</td>
+<td align="right">1792</td>
+<td align="right">3584</td>
+<td align="right">7168</td>
+<td align="right">10752</td>
+<td align="right">14336</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<table>
+<caption><span id="tab:tabla-precio-categoria-sin-atipicos-sin-inconsistencias2">Table 5.5: </span>Estadísticas del Precio (liras turcas) sin inconsistencias de clothing y technology.</caption>
+<colgroup>
+<col width="14%" />
+<col width="8%" />
+<col width="10%" />
+<col width="6%" />
+<col width="8%" />
+<col width="7%" />
+<col width="8%" />
+<col width="6%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">category</th>
+<th align="right">Registros</th>
+<th align="right">NA en price</th>
+<th align="right">Mínimo</th>
+<th align="right">Cuartil 1</th>
+<th align="right">Mediana</th>
+<th align="right">Cuartil 3</th>
+<th align="right">Máximo</th>
+<th align="right">Atípicos menores</th>
+<th align="right">Atípicos mayores</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">books</td>
+<td align="right">4980</td>
+<td align="right">1030</td>
+<td align="right">303</td>
+<td align="right">303</td>
+<td align="right">1515</td>
+<td align="right">4545</td>
+<td align="right">4545</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">clothing</td>
+<td align="right">34486</td>
+<td align="right">7</td>
+<td align="right">15004</td>
+<td align="right">30008</td>
+<td align="right">60016</td>
+<td align="right">90024</td>
+<td align="right">120032</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">cosmetics</td>
+<td align="right">15096</td>
+<td align="right">6</td>
+<td align="right">2033</td>
+<td align="right">4066</td>
+<td align="right">8132</td>
+<td align="right">12198</td>
+<td align="right">16264</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">food &amp; beverage</td>
+<td align="right">14775</td>
+<td align="right">4</td>
+<td align="right">523</td>
+<td align="right">1046</td>
+<td align="right">1569</td>
+<td align="right">2092</td>
+<td align="right">2615</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">shoes</td>
+<td align="right">10032</td>
+<td align="right">2</td>
+<td align="right">60017</td>
+<td align="right">120034</td>
+<td align="right">180051</td>
+<td align="right">240068</td>
+<td align="right">300085</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">souvenir</td>
+<td align="right">4999</td>
+<td align="right">1</td>
+<td align="right">1173</td>
+<td align="right">2346</td>
+<td align="right">3519</td>
+<td align="right">4692</td>
+<td align="right">5865</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">technology</td>
+<td align="right">4995</td>
+<td align="right">3</td>
+<td align="right">1050</td>
+<td align="right">2100</td>
+<td align="right">3150</td>
+<td align="right">4200</td>
+<td align="right">5250</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">toys</td>
+<td align="right">10087</td>
+<td align="right">2</td>
+<td align="right">1792</td>
+<td align="right">3584</td>
+<td align="right">7168</td>
+<td align="right">10752</td>
+<td align="right">14336</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<p>Finalmente, la Tabla <a href="procesamiento.html#tab:tabla-cantidad-categoria">5.6</a> expone las estadísticas de la cantidad de productos por categoría. Los resultados no muestran inconsistencias que se deben resolver.</p>
+<table>
+<caption><span id="tab:tabla-cantidad-categoria">Table 5.6: </span>Estadísticas de Cantidad de productos.</caption>
+<colgroup>
+<col width="14%" />
+<col width="8%" />
+<col width="10%" />
+<col width="6%" />
+<col width="8%" />
+<col width="7%" />
+<col width="8%" />
+<col width="6%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">category</th>
+<th align="right">Registros</th>
+<th align="right">NA en price</th>
+<th align="right">Mínimo</th>
+<th align="right">Cuartil 1</th>
+<th align="right">Mediana</th>
+<th align="right">Cuartil 3</th>
+<th align="right">Máximo</th>
+<th align="right">Atípicos menores</th>
+<th align="right">Atípicos mayores</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">books</td>
+<td align="right">4980</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">4</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">clothing</td>
+<td align="right">34486</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">4</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">cosmetics</td>
+<td align="right">15096</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">4</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">food &amp; beverage</td>
+<td align="right">14775</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">4</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">shoes</td>
+<td align="right">10032</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">4</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">souvenir</td>
+<td align="right">4999</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">4</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="odd">
+<td align="left">technology</td>
+<td align="right">4995</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">4</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+<tr class="even">
+<td align="left">toys</td>
+<td align="right">10087</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">4</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+</div>
+<div id="análisis-de-datos-atípicos" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Análisis de datos atípicos<a href="procesamiento.html#análisis-de-datos-atípicos" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>lalalalalal</p>
+<hr />
+</div>
+<div id="identificación-de-datos-faltantes" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Identificación de datos faltantes<a href="procesamiento.html#identificación-de-datos-faltantes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>La Figura <a href="procesamiento.html#fig:fig-datos-faltantes">5.4</a> muestra que las variables <em>Precio</em>, <em>Sexo</em> y <em>Edad</em> presentan el mayor porcentaje de datos faltantes, seguidas de <code>shopping_mall</code> y <code>payment_method</code>. Asimismo, evidencia que el porcentaje más alto de datos faltantes no supera el 0.0107.</p>
+<p>Adicionalmente, la Figura <a href="procesamiento.html#fig:fig-datos-faltantes">5.4</a> indica que el 98.885% de los registros no presenta datos faltantes (combinación 1), mientras que el 1.058% de registros presenta valores faltantes en <em>Precio</em> (combinación 2). Además, se identificaron el 0.019% de registros con datos faltantes en <em>Edad</em> (combinación 3) y otro 0.019% en <em>Sexo</em> (combinación 4). De igual forma, se detectó que el 0.11% de los registros tienen datos faltantes en <em>Centros comerciales</em> (combinación 5), el 0.005% en <em>Método de pago</em> (combinación 6) y, finalmente, el 0.003% en los que se registró la ausencia tanto en <em>Método de pago</em> como en <em>Precio</em> (combinación 7). A continuación, se presenta un resumen de las variables ordenadas según el número de datos faltantes.</p>
+<div class="figure"><span style="display:block;" id="fig:fig-datos-faltantes"></span>
+<img src="Informe-descriptivo_files/figure-html/fig-datos-faltantes-1.png" alt="Porcentaje de datos faltantes por variables y combinaciones de faltantes por variables." width="960" />
+<p class="caption">
+Figure 5.4: Porcentaje de datos faltantes por variables y combinaciones de faltantes por variables.
+</p>
+</div>
+<pre><code>## 
+##  Variables sorted by number of missings: 
+##        Variable        Count
+##           price 1.060835e-02
+##          gender 1.910508e-04
+##             age 1.910508e-04
+##   shopping_mall 1.106083e-04
+##  payment_method 8.044243e-05
+##      invoice_no 0.000000e+00
+##     customer_id 0.000000e+00
+##        category 0.000000e+00
+##        quantity 0.000000e+00
+##    invoice_date 0.000000e+00</code></pre>
+<p>Para evaluar formalmente si las ausencias se distribuyen de manera completamente aleatoria (MCAR), se aplicó la prueba de Little (implementada en <code>naniar::mcar_test()</code>) a las variables cuantitativas (<em>Edad</em>, <em>Cantidad</em>, <em>Precio</em>), cuya hipótesis nula establece que los datos faltantes se distribuyen de forma aleatoria. Dado el gran tamaño de la base de datos (99,450 registros), se estableció un nivel de significancia muy estricto (0.0001).</p>
+<p>El <span class="math inline">\(valor-p\)</span> obtenido fue igual a cero, lo que lleva al rechazo de la hipótesis nula con una significancia del 0.1%. Esto indica que existe evidencia suficiente para descartar que los datos faltantes sean completamente aleatorios, sugiriendo que el mecanismo de ausencia probablemente sea MNAR (Missing Not At Random).</p>
+<pre><code>## Valor-p = 0</code></pre>
+<div class="figure"><span style="display:block;" id="fig:figNormMCAR"></span>
+<img src="Informe-descriptivo_files/figure-html/figNormMCAR-1.png" alt="QQplot y curvas de densidad de variables cuantitativas." width="672" />
+<p class="caption">
+Figure 5.5: QQplot y curvas de densidad de variables cuantitativas.
+</p>
+</div>
+<p>Según la Figura <a href="procesamiento.html#fig:figNormMCAR">5.5</a>, las variables cuantitativas no cumplen el supuesto de la normalidad debido principalmente a la marcada discrecionalidad de <em>Cantidad</em> y a la fuerte asimetría observada en <em>Precio</em>. Este incumplimiento de los supuestos necesarios pone en entredicho la fiabilidad del test MCAR (basado en el método de Little), que indicó que los datos no se distribuyen de forma completamente aleatoria.</p>
+<p>El objetivo del siguiente análisis es evaluar el mecanismo de ausencia de datos en la variable <em>Precio</em>. Para ello, se creó una variable indicadora que refleja si el dato de <em>Precio</em> está ausente (1) o presente (0). Posteriormente, se ajustó un modelo de regresión logística utilizando como predictores las variables <em>Edad</em>, <em>Cantidad</em>, <em>Sexo</em> y <em>Categoría</em>.</p>
+<p>El modelo permite determinar si la probabilidad de tener un dato faltante en <em>Precio</em> está asociada a alguna de estas variables, lo que ayudaría a descartar la hipótesis de que los datos faltantes se distribuyen de forma completamente aleatoria (MCAR).</p>
+<pre><code>## 
+## Call:
+## glm(formula = miss_price ~ age + quantity + factor(gender) + 
+##     factor(category) + factor(payment_method), family = binomial, 
+##     data = datos_mod4)
+## 
+## Coefficients:
+##                                     Estimate Std. Error z value Pr(&gt;|z|)    
+## (Intercept)                       -2.331e+01  8.272e-01 -28.174   &lt;2e-16 ***
+## age                               -4.789e-04  5.338e-03  -0.090    0.929    
+## quantity                           5.197e+00  1.740e-01  29.878   &lt;2e-16 ***
+## factor(gender)male                -6.033e-03  1.645e-01  -0.037    0.971    
+## factor(category)clothing          -9.543e+00  3.980e-01 -23.978   &lt;2e-16 ***
+## factor(category)cosmetics         -8.874e+00  4.270e-01 -20.781   &lt;2e-16 ***
+## factor(category)food &amp; beverage   -9.258e+00  5.155e-01 -17.961   &lt;2e-16 ***
+## factor(category)shoes             -9.558e+00  7.182e-01 -13.308   &lt;2e-16 ***
+## factor(category)souvenir          -9.541e+00  1.008e+00  -9.464   &lt;2e-16 ***
+## factor(category)technology        -8.856e+00  7.186e-01 -12.324   &lt;2e-16 ***
+## factor(category)toys              -9.536e+00  7.183e-01 -13.276   &lt;2e-16 ***
+## factor(payment_method)credit card -7.649e-02  1.848e-01  -0.414    0.679    
+## factor(payment_method)debit card   3.846e-02  2.134e-01   0.180    0.857    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 11662.9  on 99403  degrees of freedom
+## Residual deviance:  1374.1  on 99391  degrees of freedom
+##   (46 observations deleted due to missingness)
+## AIC: 1400.1
+## 
+## Number of Fisher Scoring iterations: 12</code></pre>
+<p>De los resultados anteriores se puede decir que el modelo de regresión logística evidencia que existen asociaciones significativas entre la probabilidad de tener datos faltantes en <em>Precio</em> y las variables <em>Cantidad</em> y <em>Categoría</em>. En contraste, <em>Edad</em>, <em>Método de pago</em> y <em>Sexo</em> no resultaron ser predictores de la ausencia de <em>Precio</em>. Esto proporciona evidencia para descartar un patrón completamente aleatorio (MCAR). En consecuencia para realizar la imputación se tendrán en cuenta la imputación por grupos de acuerdo con las categorías de las variables anteriores.</p>
+<pre><code>## 
+## Call:
+## glm(formula = miss_age ~ price + quantity + factor(gender) + 
+##     factor(category) + factor(payment_method), family = binomial, 
+##     data = datos_mod4)
+## 
+## Coefficients:
+##                                     Estimate Std. Error z value Pr(&gt;|z|)
+## (Intercept)                       -2.395e+01  1.255e+03  -0.019    0.985
+## price                             -2.035e-06  7.668e-06  -0.265    0.791
+## quantity                           7.891e-02  1.603e-01   0.492    0.623
+## factor(gender)male                -3.700e-01  4.936e-01  -0.750    0.454
+## factor(category)clothing           1.557e+01  1.255e+03   0.012    0.990
+## factor(category)cosmetics          1.458e+01  1.255e+03   0.012    0.991
+## factor(category)food &amp; beverage    1.390e+01  1.255e+03   0.011    0.991
+## factor(category)shoes              3.167e-01  1.481e+03   0.000    1.000
+## factor(category)souvenir           1.568e+01  1.255e+03   0.012    0.990
+## factor(category)technology         1.499e+01  1.255e+03   0.012    0.990
+## factor(category)toys               1.499e+01  1.255e+03   0.012    0.990
+## factor(payment_method)credit card  3.972e-01  5.564e-01   0.714    0.475
+## factor(payment_method)debit card   7.920e-01  5.775e-01   1.371    0.170
+## 
+## (Dispersion parameter for binomial family taken to be 1)
+## 
+##     Null deviance: 362.97  on 98370  degrees of freedom
+## Residual deviance: 349.69  on 98358  degrees of freedom
+##   (1079 observations deleted due to missingness)
+## AIC: 375.69
+## 
+## Number of Fisher Scoring iterations: 22</code></pre>
+<p>El modelo de regresión logística para la variable <em>Edad</em> no muestra ninguna asociación significativa entre la ausencia de <em>Edad</em> y las variables <em>Precio</em>, <em>Cantidad</em>, <em>Sexo</em>, <em>Categoría</em> o <em>Método de pago</em>. Asimismo las Figuras <a href="procesamiento.html#fig:figEP">5.6</a> y <a href="procesamiento.html#fig:figEM">5.7</a> no muestran asociación entre <em>Edad</em> con <em>Niveles del precio</em>, <em>Precio</em> y <em>Método de pago</em>. Esto implica que, dentro de las variables consideradas, la falta de datos en <em>Edad</em> parece ocurrir de manera independiente, lo cual es consistente con un patrón de datos faltantes MCAR para esta variable.</p>
+<div class="figure"><span style="display:block;" id="fig:figEP"></span>
+<img src="Informe-descriptivo_files/figure-html/figEP-1.png" alt="Distribución de Edad por Niveles del precio B=Bajo, MB=Medio-Bajo, MA=Medio-Alto, A=Alto." width="672" />
+<p class="caption">
+Figure 5.6: Distribución de Edad por Niveles del precio B=Bajo, MB=Medio-Bajo, MA=Medio-Alto, A=Alto.
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:figEM"></span>
+<img src="Informe-descriptivo_files/figure-html/figEM-1.png" alt="Distribución de edad y cantidad." width="672" />
+<p class="caption">
+Figure 5.7: Distribución de edad y cantidad.
+</p>
+</div>
+<pre><code>##    
+##     books clothing cosmetics food &amp; beverage shoes souvenir technology  toys
+##   0  4978    34483     15095           14775 10032     4999       4994 10086
+##   1     2        3         1               0     0        0          1     1</code></pre>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test
+## 
+## data:  tabla_contingencia
+## X-squared = 9.7746, df = 7, p-value = 0.2017</code></pre>
+<p>En la tabla de contingencia anterior que relaciona la presencia y ausencia de datos en <em>Método de pago</em> con las distintas categorías, se observa que casi todos los registros se concentran en la fila 0 (datos presentes), mientras que la fila 1 (datos faltantes) muestra recuentos extremadamente bajos. Al aplicar el test de chi-cuadrado, se obtuvo un <span class="math inline">\(valor-p\)</span> de 0.2017, lo que lleva a no rechazar la hipótesis nula de independencia con una significancia del 5%. En otras palabras, no se encontró evidencia estadística suficiente para afirmar que exista una asociación significativa entre la categoría del producto y la presencia de datos faltantes en <em>Método de pago</em>.</p>
+<pre><code>##    
+##     female  male
+##   0  59461 39962
+##   1      6     2</code></pre>
+<pre><code>## 
+##  Pearson&#39;s Chi-squared test with Yates&#39; continuity correction
+## 
+## data:  tabla_contingencia
+## X-squared = 0.26617, df = 1, p-value = 0.6059</code></pre>
+<p>En la tabla de contingencia que relaciona la ausencia de <em>Método de pago</em> con <em>Sexo</em>, se observa que la gran mayoría de los registros tienen datos presentes (fila 0), con 59,461 registros para ‘female’ y 39,962 para ‘male’, mientras que en la fila de datos faltantes (fila 1) apenas hay 6 registros para ‘female’ y 2 para ‘male’.</p>
+<p>Al aplicar el test de chi-cuadrado, se obtuvo un <span class="math inline">\(valor-p\)</span> de 0.6059. Este resultado indica que no se rechaza la hipótesis nula de independencia con una significancia del 5%, lo que significa que no se encontró evidencia estadística significativa para afirmar que exista una asociación entre el <em>Sexo</em> y la ausencia de <em>Método de pago</em>.</p>
+</div>
+<div id="imputación-de-datos-faltantes" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Imputación de datos faltantes<a href="procesamiento.html#imputación-de-datos-faltantes" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="imputación-del-precio-price" class="section level3 hasAnchor" number="5.4.1">
+<h3><span class="header-section-number">5.4.1</span> Imputación del Precio (price)<a href="procesamiento.html#imputación-del-precio-price" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Los boxplots de la Figura <a href="procesamiento.html#fig:figPreciocategory1">5.8</a> evidencian diferencias notorias entre las medianas de al menos cuatro categorías, lo que sugiere una fuerte heterogeneidad en los precios según la categoría del producto.</p>
+<p>Las curvas de densidad de los precios por categoría, ilustradas en las Figuras <a href="procesamiento.html#fig:figPreciocategory2">5.9</a> y <a href="procesamiento.html#fig:figPreciocategory3">5.10</a>, exhiben picos en diferentes rangos de valores, lo que sugiere variaciones significativas en la distribución del precio según la categoría del producto.</p>
+<p>La Figura <a href="procesamiento.html#fig:figPreciocategorycantidad">5.11</a> evidencia una tendencia lineal positiva entre el precio y la cantidad de productos comprados para la mayoría de las categorías, con la salvedad de <code>books</code>, en la cual no se aprecia esta correlación.</p>
+<div class="figure"><span style="display:block;" id="fig:figPreciocategory1"></span>
+<img src="Informe-descriptivo_files/figure-html/figPreciocategory1-1.png" alt="Distribución del precio según  categoría." width="672" />
+<p class="caption">
+Figure 5.8: Distribución del precio según categoría.
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:figPreciocategory2"></span>
+<img src="Informe-descriptivo_files/figure-html/figPreciocategory2-1.png" alt="Distribución del precio según categoría." width="672" />
+<p class="caption">
+Figure 5.9: Distribución del precio según categoría.
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:figPreciocategory3"></span>
+<img src="Informe-descriptivo_files/figure-html/figPreciocategory3-1.png" alt="Distribución del precio según categoría." width="672" />
+<p class="caption">
+Figure 5.10: Distribución del precio según categoría.
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:figPreciocategorycantidad"></span>
+<img src="Informe-descriptivo_files/figure-html/figPreciocategorycantidad-1.png" alt="Comparación de precio y cantidad por categoría." width="672" />
+<p class="caption">
+Figure 5.11: Comparación de precio y cantidad por categoría.
+</p>
+</div>
+<p>La estrategia consiste en imputar los valores faltantes de la variable <em>Precio</em> utilizando la mediana calculada para cada combinación de <em>Categoría</em> y <em>Cantidad</em>. De este modo, se aprovecha la información específica de cada grupo, ya que la mediana es un estadístico robusto frente a outliers y sesgos, por tanto refleja de manera adecuada la tendencia central en cada segmento.</p>
+<p>A continuación para cada grupo definido por <em>Categoría</em> y <em>Cantidad</em>, se reemplaza el valor faltante en <em>Precio</em> por la mediana de <em>Precio</em> dentro del grupo. Esta metodología permite obtener imputaciones consistentes con la distribución de precios en cada segmento y un posible dato faltante MAR o MNAR.</p>
+<pre><code>## # A tibble: 40 × 5
+## # Groups:   category [8]
+##    category quantity mediana n_missing total
+##    &lt;chr&gt;       &lt;dbl&gt;   &lt;dbl&gt;     &lt;int&gt; &lt;int&gt;
+##  1 books           1    1515         0   984
+##  2 books           2     303         0  1008
+##  3 books           3    4545         0  1000
+##  4 books           4     606         0   959
+##  5 books           5      NA      1029  1029
+##  6 clothing        1   30008         0  6841
+##  7 clothing        2   60016         0  6951
+##  8 clothing        3   90024         0  6905
+##  9 clothing        4  120032         0  6849
+## 10 clothing        5   15004         0  6940
+## # ℹ 30 more rows</code></pre>
+<pre><code>## Número de valores faltantes en Precio después de la imputación: 1029</code></pre>
+<p>En el grupo correspondiente a la categoría <code>books</code> con <code>quantity</code> igual a 5 se observa que la mediana es <code>NA</code> y que <code>n_missing</code> es 1,029. Esto indica que, en ese grupo, todos los registros tenían el valor de <em>Precio</em> como faltante. En este grupo no fue posible realizar la imputación usando la mediana.</p>
+<p>Una alternativa para resolver los datos faltantes que faltan consiste en imputar el grupo problemático (<code>books</code> con <em>Cantidad</em> igual a 5) utilizando la mediana del grupo similar, es decir, de <code>books</code> con <em>Cantidad</em> igual a 4. De esta manera se tendrían todos los datos faltantes de <em>Precio</em> imputados.</p>
+<pre><code>## Número de valores faltantes en Precio después de la imputación: 0</code></pre>
+<p>Las curvas de densidad de <em>Precio</em> de las Figuras <a href="procesamiento.html#fig:figPreciocategory1Imp">5.12</a> y <a href="procesamiento.html#fig:figPreciocategory3Imp">5.13</a> tienen distribución muy similar a la de la variable <em>Precio</em> antes de la imputación, lo que refleja una buena adecuada imputación de los datos.</p>
+<div class="figure"><span style="display:block;" id="fig:figPreciocategory1Imp"></span>
+<img src="Informe-descriptivo_files/figure-html/figPreciocategory1Imp-1.png" alt="Distribución del precio según  categoría." width="672" />
+<p class="caption">
+Figure 5.12: Distribución del precio según categoría.
+</p>
+</div>
+<div class="figure"><span style="display:block;" id="fig:figPreciocategory3Imp"></span>
+<img src="Informe-descriptivo_files/figure-html/figPreciocategory3Imp-1.png" alt="Distribución del precio según categoría." width="672" />
+<p class="caption">
+Figure 5.13: Distribución del precio según categoría.
+</p>
+</div>
+</div>
+<div id="imputación-de-la-edad-age" class="section level3 hasAnchor" number="5.4.2">
+<h3><span class="header-section-number">5.4.2</span> Imputación de la Edad (age)<a href="procesamiento.html#imputación-de-la-edad-age" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>La Figura <a href="procesamiento.html#fig:figedaddensidad">5.14</a> muestra la curva de densidad de la variable <em>Edad</em>. Dado que la densidad de la <em>Edad</em> se ve aproximadamente uniforme entre 18 y 69/70 años, imputar usando la mediana (o la media) podría sesgar la distribución hacia un único valor central. Para imputar se selecciona un valor al azar entre 18 y 70 años.</p>
+<div class="figure"><span style="display:block;" id="fig:figedaddensidad"></span>
+<img src="Informe-descriptivo_files/figure-html/figedaddensidad-1.png" alt="Distribución de edad y cantidad." width="672" />
+<p class="caption">
+Figure 5.14: Distribución de edad y cantidad.
+</p>
+</div>
+<pre><code>## Número de valores faltantes en  Edad después de la imputación: 0</code></pre>
+<div class="figure"><span style="display:block;" id="fig:figedadcantidad2"></span>
+<img src="Informe-descriptivo_files/figure-html/figedadcantidad2-1.png" alt="Distribución de edad y cantidad." width="672" />
+<p class="caption">
+Figure 5.15: Distribución de edad y cantidad.
+</p>
+</div>
+<p>La Figura <a href="procesamiento.html#fig:figedadcantidad2">5.15</a> muestra la curva de densidad de la variable <em>Edad</em> después de imputar los datos faltantes. La distribución de antes y después se aprecian muy similares.</p>
+</div>
+<div id="imputación-de-sexo-gender-centro-comercial-shopping_mall-y-método-de-pago-payment_method" class="section level3 hasAnchor" number="5.4.3">
+<h3><span class="header-section-number">5.4.3</span> Imputación de Sexo (gender), Centro Comercial (shopping_mall) y Método de pago (payment_method)<a href="procesamiento.html#imputación-de-sexo-gender-centro-comercial-shopping_mall-y-método-de-pago-payment_method" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Los datos faltantes de las variables <em>Sexo</em>, <em>Centro comercial</em> y <em>Método de pago</em> son imputados usando la moda de cada una de las variables.</p>
+<p>La Figura <a href="procesamiento.html#fig:figimpSCCM">5.16</a> muestra la distribución estas variables antes y después de la imputación de los datos.
+Ambas distribuciones se aprecian muy parecidas, lo que es una buena señal para continuar con el análisis.</p>
+<pre><code>## Valores faltantes en &#39;gender&#39;: 19</code></pre>
+<pre><code>## Valores faltantes en &#39;shopping_mall&#39;: 11</code></pre>
+<pre><code>## Valores faltantes en &#39;payment_method&#39;: 8</code></pre>
+<div class="figure"><span style="display:block;" id="fig:figimpSCCM"></span>
+<img src="Informe-descriptivo_files/figure-html/figimpSCCM-1.png" alt="Distribución de edad y cantidad." width="672" />
+<p class="caption">
+Figure 5.16: Distribución de edad y cantidad.
+</p>
+</div>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="datos.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="resultados.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

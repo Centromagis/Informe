@@ -1,0 +1,22 @@
+
+# Objetivos
+
+## Objetivo general
+
+Explicar los hábitos de consumo en Estambul. 
+
+## Objetivo específicos
+
+Para dar respuesta al objetivo general de la actividad, es necesario formular objetivos específicos que orienten el análisis hacia su cumplimiento. A continuación, se presentan los objetivos específicos que pueden desarrollarse con base en la información disponible en la base de datos:
+
+-  Estudiar el comportamiento de compra por tipo de producto entre los distintos centros comerciales.
+
+-  Analizar el comportamiento de compra según el sexo y la edad de los clientes.
+
+-  Examinar la distribución de los métodos de pago en función del sexo y la edad.
+
+-  Estudiar la variación de los precios de los productos por centro comercial y tipo de pago utilizado.
+
+-  Analizar las tendencias del número de transacciones por producto en los distintos centros comerciales a lo largo del periodo cubierto por la muestra.
+
+-  Comparar el valor total de las ventas por tipo de producto en los diferentes centros comerciales durante los años incluidos en la base de datos.

@@ -1,0 +1,36 @@
+h2:análisis-univariado Análisis univariado
+h3:sexo Sexo
+h3:edad Edad
+h3:categoría Categoría
+h3:cantidad Cantidad
+h3:precio Precio
+h3:método-de-pago Método de pago
+h3:fecha-de-transacción Fecha de transacción
+h3:centro-comercial Centro comercial
+h2:análisis-bivariado Análisis bivariado
+h3:tabla-atipicos-o-inconsistencias Tabla atipicos o inconsistencias
+h2:paso-4-manejo-de-valores-atipicos Paso 4: Manejo de valores atipicos
+h3:datos-atipicos Datos atipicos
+h3:tabla-comparativa-con-los-datos-antes-y-después-del-tratamiento. tabla comparativa con los datos antes y después del tratamiento.
+h3:incluir-graficos-que-ilustren-el-impacto-de-las-decisiones-tomadas Incluir graficos que ilustren el impacto de las decisiones tomadas,
+h2:paso-5-análisis-de-datos-faltantes Paso 5: Análisis de datos faltantes
+h2:paso-6-test-de-hipótesis-para-datos-faltantes Paso 6: Test de hipótesis para datos faltantes
+h2:paso-7-imputación-de-datos-faltantes. Paso 7: Imputación de datos faltantes.
+h3:age age
+h3:category category
+h3:gender gender
+h3:shopping_mall shopping_mall
+h3:payment_method payment_method
+h3:price price
+h2:paso-8---9-análisis-descriptivo-post-procesamiento-y-selección-de-resultados-para-el-informe Paso 8 - 9: Análisis descriptivo post-procesamiento y Selección de resultados para el informe
+h4:cantidad-de-productos-por-transacción Cantidad de Productos por Transacción
+h4:precio-de-las-compras Precio de las Compras
+h4:edad-de-los-clientes Edad de los Clientes
+h2:paso-10-explicación-de-patrones-y-tendencias Paso 10: Explicación de patrones y tendencias
+h3:distribución-demográfica-de-los-consumidores Distribución Demográfica de los Consumidores
+h3:categorías-de-productos-preferidos Categorías de Productos Preferidos
+h3:métodos-de-pago-más-utilizados Métodos de Pago Más Utilizados
+h3:distribución-del-consumo-en-centros-comerciales Distribución del Consumo en Centros Comerciales
+h3:conclusiones-y-tendencias-futuras Conclusiones y Tendencias Futuras
+h3:recomendaciones-tecnicas-de-la-informacion Recomendaciones tecnicas de la informacion
+

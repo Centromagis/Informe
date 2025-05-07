@@ -1,0 +1,33 @@
+h1:procesamiento Procesamiento
+h2:errores-e-inconsistencias Errores e inconsistencias
+h3:errores-de-escritura Errores de escritura
+h3:inconsistencias Inconsistencias
+fig:fig-edad Edad (años).
+tab:tabla-edad Estadísticas de Edad (años).
+fig:fig-precio-categorias Precio (liras turcas) por Categoría del producto.
+tab:tabla-precio-categoria Estadísticas del Precio (liras turcas) por Categoría del producto.
+fig:fig-precio-categoria-sin-atipicos Precio (liras turcas) por categoría del producto sin atípicos.
+tab:tabla-precio-categoria-sin-atipicos2 Estadísticas del Precio (liras turcas) sin 3 atípicos.
+tab:tabla-precio-categoria-sin-atipicos-sin-inconsistencias Estadísticas del Precio (liras turcas) sin  inconsistencias de clothing y technology.
+tab:tabla-precio-categoria-sin-atipicos-sin-inconsistencias2 Estadísticas del Precio (liras turcas) sin  inconsistencias de clothing y technology.
+tab:tabla-cantidad-categoria Estadísticas de Cantidad de productos.
+h2:análisis-de-datos-atípicos Análisis de datos atípicos
+h2:identificación-de-datos-faltantes Identificación de datos faltantes
+fig:fig-datos-faltantes Porcentaje de datos faltantes por variables y combinaciones de faltantes por variables.
+fig:figNormMCAR QQplot y curvas de densidad de variables cuantitativas.
+fig:figEP Distribución de Edad por Niveles del precio B=Bajo, MB=Medio-Bajo, MA=Medio-Alto, A=Alto.
+fig:figEM Distribución de edad y cantidad.
+h2:imputación-de-datos-faltantes Imputación de datos faltantes
+h3:imputación-del-precio-price Imputación del Precio (price)
+fig:figPreciocategory1 Distribución del precio según  categoría.
+fig:figPreciocategory2 Distribución del precio según categoría.
+fig:figPreciocategory3 Distribución del precio según categoría.
+fig:figPreciocategorycantidad Comparación de precio y cantidad por categoría.
+fig:figPreciocategory1Imp Distribución del precio según  categoría.
+fig:figPreciocategory3Imp Distribución del precio según categoría.
+h3:imputación-de-la-edad-age Imputación de la Edad (age)
+fig:figedaddensidad Distribución de edad y cantidad.
+fig:figedadcantidad2 Distribución de edad y cantidad.
+h3:imputación-de-sexo-gender-centro-comercial-shopping_mall-y-método-de-pago-payment_method Imputación de Sexo (gender), Centro Comercial (shopping_mall) y Método de pago (payment_method)
+fig:figimpSCCM Distribución de edad y cantidad.
+
