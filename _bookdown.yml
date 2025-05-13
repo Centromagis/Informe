@@ -3,15 +3,15 @@ delete_merged_file: true
 new_session: no
 
 rmd_files:
-  - "index_a.Rmd"
-  - "descripcion_actividad_a.Rmd"
-  - "objetivos_a.Rmd"
-  - "datos_a.Rmd"
-  - "procesamiento_a.Rmd"
-  - "resultados_a.Rmd"
-  - "conclusiones_a.Rmd"
-  - "referencias_a.Rmd"
-  - "Anexos_a.Rmd"
+  - "index.Rmd"
+  - "descripcion_actividad.Rmd"
+  - "objetivos.Rmd"
+  - "datos.Rmd"
+  - "procesamiento.Rmd"
+  - "resultados.Rmd"
+  - "conclusiones.Rmd"
+  - "referencias.Rmd"
+  - "Anexos.Rmd"
 
 # Todos los archivos de salida (HTML y carpeta de recursos) irán a docs/
 output_dir: "docs"

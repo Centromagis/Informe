@@ -1,5 +1,5 @@
 
-bookdown::render_book("index_a.Rmd")
+bookdown::render_book("index.Rmd")
 
 
 
