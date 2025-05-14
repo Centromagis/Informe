@@ -1,0 +1,21 @@
+
+# Objetivos
+
+## Objetivo general
+
+Analizar los hábitos de consumo en Estambul a partir de la base de datos de transacciones. 
+
+## Objetivo específicos
+
+Para dar respuesta al objetivo general de la actividad, es necesario formular objetivos específicos que orienten el análisis hacia su cumplimiento. A continuación, se presentan los objetivos específicos que pueden desarrollarse con base en la información disponible en la base de datos:
+
+-  Identificar el grupo de edad y género con el mayor número de compras.
+
+-  Caracterizar el comportamiento de compra según el sexo y la franja etaria de los clientes.
+
+-  Evaluar la distribución de los métodos de pago (efectivo, crédito, débito) en función de sexo, edad y categoría de producto.
+
+-  Cuantificar la variación del monto total facturado por transacción, desglosada por tipo de producto y centro comercial.
+
+- Comparar la evolución del monto facturado por categoría de producto entre los diferentes centros comerciales a lo largo del periodo muestreado.
+
