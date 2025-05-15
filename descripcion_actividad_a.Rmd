@@ -1,4 +1,0 @@
-
-# Descripción
-
-Se debe elabor un informe estadístico con el fin de explicar los hábitos de consumo observados en los diez centros comerciales de Estambul, a partir del análisis de la base de datos de la muestra.
